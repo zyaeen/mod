@@ -1,0 +1,7 @@
+@ID
+@EqualsAndHashCode.Include
+@Path(primitive = @ANCHOR_TABLE_NAME@.class, name = @ANCHOR_TABLE_NAME@.@ANCHOR_MNE@_ID, alias = @ANCHOR_TABLE_NAME@.@ANCHOR_MNE@_ID_ALIAS)
+@JsonProperty("@anchor_mne@Id")
+@XmlAttribute(name = "@anchor_mne@Id")
+@Builder.Default
+private long @anchor_mne@Id = Constants.NULL_LONG;
