@@ -2548,13 +2548,13 @@ export class LdDomainComponent extends LitElement {
 
     handleZoom(e: CustomEvent) {
         if (e.detail == 'zoom-plus') {
-            if (this.network.getScale() * 1.3 >= 1.5) {
+            if (this.network.getScale() * 1.3 <= 1.5) {
                 // return;
                 this.scale = this.scale * 1.3;
                 this.network.moveTo({scale: this.scale});
             }
         } else {
-            if (this.network.getScale() / 1.3 <= 0.2) {
+            if (this.network.getScale() / 1.3 >= 0.2) {
                 // return;
                 this.scale = this.scale / 1.3;
                 this.network.moveTo({scale: this.scale});
