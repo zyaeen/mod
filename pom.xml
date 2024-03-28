@@ -259,6 +259,12 @@
                                     <goal>stop</goal>
                                 </goals>
                             </execution>
+                            <execution>
+                                <goals>
+                                    <goal>repackage</goal>
+                                </goals>
+                            </execution>
+
                         </executions>
                     </plugin>
 
